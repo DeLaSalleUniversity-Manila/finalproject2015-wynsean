@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainMenu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/imageViewTitle"
+        android:src="@drawable/freshiebanner"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#33b033"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_button"
+        android:id="@+id/buttonHelp"
+        android:layout_alignBottom="@+id/imageViewTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickHelpButton"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:textColor="#dbdbdb"
+        android:textSize="25sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/buttonHelp"
+        android:layout_centerHorizontal="true"
+        android:background="#fafafa">
+
+        <GridView
+            android:id="@+id/gridviewCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:stretchMode="columnWidth"
+            android:numColumns="2" />
+    </FrameLayout>
+
+</RelativeLayout>

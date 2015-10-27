@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="red">#E15258</drawable>
+    <drawable name="lavender">#838CC7</drawable>
+    <drawable name="pink">#F092B0</drawable>
+    <drawable name="light_gray">#B7C0C7</drawable>
+    <drawable name="green">#51B46D</drawable>
+    <drawable name="light_blue">#39ADD1</drawable>
+
+    <drawable name="freshfoodpic">@drawable/freshfood</drawable>
+    <drawable name="foodcupboardpic">@drawable/foodcupboard</drawable>
+    <drawable name="frozenfoodpic">@drawable/frozenfood</drawable>
+    <drawable name="drinkspic">@drawable/drinks</drawable>
+    <drawable name="healthandbeautypic">@drawable/healthandbeauty</drawable>
+    <drawable name="householdpic">@drawable/household</drawable>
+
+</resources>

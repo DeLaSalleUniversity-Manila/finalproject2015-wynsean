@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wynsean.freshie.FreshFruitActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Fresh Fruit"
+        android:id="@+id/textViewFreshFruit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="#33b033" />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandableListViewFreshFruit"
+        android:indicatorLeft="250dp"
+        android:indicatorRight="300dp"
+        android:layout_below="@+id/textViewFreshFruit"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
