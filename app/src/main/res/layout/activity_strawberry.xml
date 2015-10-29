@@ -1,12 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#fafafa">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/textViewPurchaseName"
+        android:text="Strawberry"
+        android:gravity="bottom"
+        android:paddingLeft="16dp"
+        android:textSize="18sp"
+        android:background="#fafafa"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/textViewPurchaseName"
+        android:background="#1e000000"
+        android:id="@+id/view" />
+
+    <LinearLayout
+        android:id="@+id/buttongroup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageViewStrawberry"
-        android:src="@drawable/strawberry"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textViewPurchaseName"
+        android:layout_marginTop="20dp"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageViewPurchaseWindow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:src="@drawable/strawberry"
+            />
+
+        <TextView
+            android:id="@+id/composite_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="STRAWBERRY" />
+
+
+    </LinearLayout>
+
 </RelativeLayout>

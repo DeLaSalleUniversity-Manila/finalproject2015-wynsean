@@ -19,26 +19,15 @@ public class FreshieDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE FRESHIE ("
-                + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + "CATEGORY TEXT, "
-                + "SUB_CATEGORY_1 TEXT, "
-                + "SUB_CATEGORY_2 TEXT, "
-                + "PRODUCT TEXT, "
-                + "PRICE REAL, "
-                + "STOCK INTEGER, "
-                + "IMAGE INTEGER, "
-                + "DETAIL TEXT, "
-                + "RATING REAL);");
-        insertDrink(db, "Fresh Food", "Fresh Fruit", "Berries", "Strawberry", 100.00, 10, );
+        updateMyDatabase(db, 0, DB_VERSION);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        updateMyDatabase(db, oldVersion, newVersion);
     }
 
-    private static void insertDrink(SQLiteDatabase db, String category, String sub_category_1, String sub_category_2, String product, double price, int stock, int image, String details, double rating) {
+    private static void insertItem(SQLiteDatabase db, String category, String sub_category_1, String sub_category_2, String product, double price, int stock, int image, String details, double rating) {
         ContentValues freshieValues = new ContentValues();
         freshieValues.put("CATEGORY", category);
         freshieValues.put("SUB_CATEGORY_1", sub_category_1);
@@ -50,5 +39,23 @@ public class FreshieDatabaseHelper extends SQLiteOpenHelper {
         freshieValues.put("DETAIL", details);
         freshieValues.put("RATING", rating);
         db.insert("FRESHIE", null, freshieValues);
+    }
+
+    private void updateMyDatabase(SQLiteDatabase db, int oldVersion, int newVersion) {
+        if (oldVersion == 0) {
+            db.execSQL("CREATE TABLE FRESHIE ("
+                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + "CATEGORY TEXT, "
+                    + "SUB_CATEGORY_1 TEXT, "
+                    + "SUB_CATEGORY_2 TEXT, "
+                    + "PRODUCT TEXT, "
+                    + "PRICE REAL, "
+                    + "STOCK INTEGER, "
+                    + "IMAGE INTEGER, "
+                    + "DETAIL TEXT, "
+                    + "RATING REAL);");
+            insertItem(db, "Fresh Food", "Fresh Fruit", "Berries", "Strawberry", 100.00, 10,
+                    R.drawable.strawberry, "Juicy and Delicious", 4.5);
+        }
     }
 }
