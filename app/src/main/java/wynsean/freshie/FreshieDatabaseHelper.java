@@ -34,7 +34,7 @@ public class FreshieDatabaseHelper extends SQLiteOpenHelper {
         freshieValues.put("SUB_CATEGORY_2", sub_category_2);
         freshieValues.put("PRODUCT", product);
         freshieValues.put("PRICE", price);
-        freshieValues.put("STOCK", stock);
+        freshieValues.put("STOCK", stock); // temporarily used as quantity bought by user
         freshieValues.put("IMAGE", image);
         freshieValues.put("DETAIL", details);
         freshieValues.put("RATING", rating);

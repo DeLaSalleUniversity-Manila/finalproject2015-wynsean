@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#fafafa">
+    android:background="#fafafa"
+    android:focusable="false">
 
     <TextView
         android:layout_width="match_parent"
@@ -30,27 +31,119 @@
         android:layout_marginRight="16dp"
         android:orientation="horizontal"
         android:layout_below="@+id/textViewPurchaseName"
-        android:layout_marginTop="20dp"
-
-        >
+        android:layout_marginTop="20dp" >
 
 
         <ImageView
             android:id="@+id/imageViewPurchaseWindow"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:src="@drawable/strawberry"
-            />
+            android:background="@android:color/white"
+            android:elevation="2dp" />
 
-        <TextView
-            android:id="@+id/composite_button"
+        <RelativeLayout
             android:layout_width="0dp"
+            android:layout_height="150dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="STRAWBERRY" />
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/TextViewPurchasePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Price:" />
+
+            <TextView
+                android:id="@+id/TextViewPurchaseAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:layout_below="@+id/TextViewPurchasePrice"
+                android:text="P100.00" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_below="@+id/TextViewPurchaseAmount"
+                android:background="#1e000000"
+                android:id="@+id/ViewPurchaseWindowDivider" />
+
+            <TextView
+                android:id="@+id/TextViewPurchaseWindowQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:layout_below="@+id/ViewPurchaseWindowDivider"
+                android:text="Quantity:" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:inputType="number"
+                android:ems="4"
+                android:id="@+id/editText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/TextViewPurchaseWindowQuantity"
+                android:text="1" />
+
+        </RelativeLayout>
 
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textViewPurchaseWindowTotalAmount"
+        android:layout_below="@+id/buttongroup"
+        android:layout_alignLeft="@+id/buttongroup"
+        android:layout_alignStart="@+id/buttongroup"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textViewPurchaseWindowTotalAmountMoney"
+        android:layout_alignTop="@+id/textViewPurchaseWindowTotalAmount"
+        android:layout_toRightOf="@+id/textViewPurchaseWindowTotalAmount"
+        android:layout_toEndOf="@+id/textViewPurchaseWindowTotalAmount"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@+id/textViewPurchaseWindowTotalAmount">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:textColor="#ffffff"
+            android:background="#E53935"
+            android:text="Cancel"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:textColor="#ffffff"
+            android:background="#43A047"
+            android:text="Add to Cart"/>
+    </LinearLayout>
 </RelativeLayout>

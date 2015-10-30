@@ -12,30 +12,16 @@
         android:background="#33b033"
         />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/help_button"
-        android:id="@+id/buttonHelp"
-        android:layout_alignBottom="@+id/imageViewTitle"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="onClickHelpButton"
-        android:clickable="true"
-        android:background="@android:color/transparent"
-        android:textColor="#dbdbdb"
-        android:textSize="25sp" />
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="5dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:layout_below="@+id/buttonHelp"
         android:layout_centerHorizontal="true"
-        android:background="#fafafa">
+        android:layout_below="@+id/imageViewTitle"
+        android:background="#fafafa"
+        android:id="@+id/frameLayout">
 
         <GridView
             android:id="@+id/gridviewCategories"
@@ -46,5 +32,17 @@
             android:stretchMode="columnWidth"
             android:numColumns="2" />
     </FrameLayout>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/shoppingcart"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="9dp"
+        android:layout_above="@+id/frameLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

@@ -46,9 +46,10 @@
         <activity android:name=".HouseholdActivity" >
         </activity>
 
-        <activity android:name=".StrawberryActivity"
-            android:theme="@style/AppTheme.CustomTheme"
-            ></activity>
+        <activity
+            android:name=".StrawberryActivity"
+            android:theme="@style/AppTheme.CustomTheme" >
+        </activity>
     </application>
 
 </manifest>
