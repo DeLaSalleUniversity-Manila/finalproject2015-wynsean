@@ -22,7 +22,7 @@
         android:id="@+id/imageViewSplashScreenLogo"
         android:layout_below="@+id/textViewSplashScreenTitle"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/freshieicon"
+        android:src="@drawable/freshieicontrans"
         android:layout_marginTop="33dp" />
 
     <TextView

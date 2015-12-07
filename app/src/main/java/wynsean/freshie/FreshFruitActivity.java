@@ -18,7 +18,7 @@ public class FreshFruitActivity extends AppCompatActivity {
     LinkedHashMap<String, List<String>> FreshFruit_category;
     List<String> FreshFruit_list;
     ExpandableListView Exp_list;
-    FreshFruitAdapter adapter;
+    ExpandedListAdapter adapter;
 
 
     @Override
@@ -29,7 +29,7 @@ public class FreshFruitActivity extends AppCompatActivity {
         Exp_list = (ExpandableListView) findViewById(R.id.expandableListViewFreshFruit);
         FreshFruit_category = DataProvider.getInfo();
         FreshFruit_list = new ArrayList<>(FreshFruit_category.keySet());
-        adapter = new FreshFruitAdapter(this, FreshFruit_category, FreshFruit_list);
+        adapter = new ExpandedListAdapter(this, FreshFruit_category, FreshFruit_list);
         Exp_list.setAdapter(adapter);
 
         Exp_list.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
@@ -38,7 +38,7 @@ public class FreshFruitActivity extends AppCompatActivity {
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
 
                 if (groupPosition == 3 && childPosition == 5) {
-                    startActivity(new Intent(getBaseContext(), StrawberryActivity.class));
+                    startActivity(new Intent(getBaseContext(), FreshFoodPurchaseActivity.class));
                 }
 
                 return false;

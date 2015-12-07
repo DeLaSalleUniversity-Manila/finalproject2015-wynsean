@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:id="@+id/textViewPurchaseName"
-        android:text="Strawberry"
         android:gravity="bottom"
         android:paddingLeft="16dp"
         android:textSize="18sp"
@@ -39,7 +38,6 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="150dp"
-            android:src="@drawable/strawberry"
             android:background="@android:color/white"
             android:elevation="2dp" />
 
@@ -64,7 +62,7 @@
                 android:paddingLeft="16dp"
                 android:paddingBottom="8dp"
                 android:layout_below="@+id/TextViewPurchasePrice"
-                android:text="P100.00" />
+                android:text="" />
 
             <View
                 android:layout_width="match_parent"
@@ -89,7 +87,7 @@
                 android:paddingLeft="16dp"
                 android:inputType="number"
                 android:ems="4"
-                android:id="@+id/editText"
+                android:id="@+id/editTextTotalQuantity"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/TextViewPurchaseWindowQuantity"
                 android:text="1" />
@@ -135,15 +133,18 @@
             android:layout_marginRight="8dp"
             android:textColor="#ffffff"
             android:background="#E53935"
+            android:onClick="onClickCancel"
             android:text="Cancel"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:id="@+id/ButtonAddCart"
             android:layout_weight="1"
             android:layout_marginLeft="8dp"
             android:textColor="#ffffff"
             android:background="#43A047"
+            android:onClick="onClickAdd"
             android:text="Add to Cart"/>
     </LinearLayout>
 </RelativeLayout>

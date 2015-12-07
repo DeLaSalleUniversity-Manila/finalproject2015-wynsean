@@ -20,7 +20,7 @@ import wynsean.freshie.R;
  * Created by Wyndell on 07/10/2015.
  */
 public final class MyAdapter extends BaseAdapter {
-    private final List<Item> mItems = new ArrayList<Item>();
+    private final List<Item> mItems = new ArrayList<>();
     private final LayoutInflater mInflater;
 
     public MyAdapter(Context context) {
@@ -30,8 +30,8 @@ public final class MyAdapter extends BaseAdapter {
         mItems.add(new Item("Food Cupboard",   R.drawable.foodcupboardpic));
         mItems.add(new Item("Frozen Food", R.drawable.frozenfoodpic));
         mItems.add(new Item("Drinks",      R.drawable.drinkspic));
-        mItems.add(new Item("Health and Beauty",     R.drawable.healthandbeautypic));
-        mItems.add(new Item("Household",      R.drawable.householdpic));
+//        mItems.add(new Item("Health and Beauty",     R.drawable.healthandbeautypic));
+//        mItems.add(new Item("Household",      R.drawable.householdpic));
     }
 
     @Override

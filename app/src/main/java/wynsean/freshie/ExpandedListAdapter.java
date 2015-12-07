@@ -13,13 +13,13 @@ import java.util.List;
 /**
  * Created by Wyndell on 09/10/2015.
  */
-public class FreshFruitAdapter extends BaseExpandableListAdapter{
+public class ExpandedListAdapter extends BaseExpandableListAdapter{
 
     private Context ctx;
     private LinkedHashMap<String, List<String>> FreshFruit_Category;
     private List<String> FreshFruit_List;
 
-    public FreshFruitAdapter(Context ctx, LinkedHashMap<String, List<String>> FreshFruit_Category, List<String> FreshFruit_List) {
+    public ExpandedListAdapter(Context ctx, LinkedHashMap<String, List<String>> FreshFruit_Category, List<String> FreshFruit_List) {
 
         this.ctx = ctx;
         this.FreshFruit_Category = FreshFruit_Category;

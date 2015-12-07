@@ -30,18 +30,18 @@
         <item>Fresh Fruit</item>
         <item>Fresh Vegetable</item>
         <item>Fresh Poultry</item>
-        <item>Fresh Meat</item>
-        <item>Fresh Seafood</item>
-        <item>Dairy</item>
+        <!--<item>Fresh Meat</item>-->
+        <!--<item>Fresh Seafood</item>-->
+        <!--<item>Dairy</item>-->
     </string-array>
 
         <string-array name="freshfruitlist">
             <item>Apples</item>
             <item>Avocados</item>
             <item>Bananas</item>
-            <item>Berries</item>
-            <item>Coconut</item>
-            <item>Durian</item>
+            <!--<item>Berries</item>-->
+            <!--<item>Coconut</item>-->
+            <!--<item>Durian</item>-->
         </string-array>
 
 
@@ -49,9 +49,9 @@
         <item>Tins, Cans, and Packets</item>
         <item>Biscuits</item>
         <item>Chocolate</item>
-        <item>Cereals</item>
-        <item>Cooking Ingredients</item>
-        <item>Dried Pasta, Rice, and Noodles</item>
+        <!--<item>Cereals</item>-->
+        <!--<item>Cooking Ingredients</item>-->
+        <!--<item>Dried Pasta, Rice, and Noodles</item>-->
     </string-array>
 
 
@@ -59,22 +59,22 @@
         <item>Frozen Meat and Poultry</item>
         <item>Frozen Fish and Seafood</item>
         <item>Ice Cream and Frozen Yoghurt</item>
-        <item>Frozen Desserts, Fruits, and Pastry</item>
-        <item>Frozen Pies</item>
+        <!--<item>Frozen Desserts, Fruits, and Pastry</item>-->
+        <!--<item>Frozen Pies</item>-->
     </string-array>
 
     <string-array name="drinkslist">
         <item>Fizzy Drinks and Cola</item>
         <item>Juices and Smoothies</item>
         <item>Bottled Water</item>
-        <item>Adult Drinks and Mixers</item>
-        <item>Sports and Energy Drinks</item>
-        <item>Tea</item>
-        <item>Coffee</item>
-        <item>Hot Chocolate and Malted Drinks</item>
-        <item>Beer and Cider</item>
-        <item>Wine</item>
-        <item>Spirits</item>
+        <!--<item>Adult Drinks and Mixers</item>-->
+        <!--<item>Sports and Energy Drinks</item>-->
+        <!--<item>Tea</item>-->
+        <!--<item>Coffee</item>-->
+        <!--<item>Hot Chocolate and Malted Drinks</item>-->
+        <!--<item>Beer and Cider</item>-->
+        <!--<item>Wine</item>-->
+        <!--<item>Spirits</item>-->
     </string-array>
 
     <string-array name="healthandbeautylist">
@@ -103,23 +103,17 @@
 
     <string name="title_activity_help">HelpActivity</string>
     <string name="help_button">\?</string>
-    <string name="help_instructions">Freshie v1.0\n\n
+    <string name="help_instructions">Freshie v2.0\n\n
 
             Instructions:\n
             Step 1: Currently entered as guest\n
             Step 2: Press on the category of item you want to buy\n
-            Step 3: Checkout and select payment\n
-            Step 4: Wait for the grocery to be delivered\n\n
+            Step 3: Select item you want to buy
+            Step 4: Checkout using cart button in the upper right corner\n\n
 
-            Feautures:\n
-            -Details on the product\n
-            -Review on the product\n
-            -Product rating\n
-            -Suggested recipes on certain products\n\n
-
-            Feautures on next update:\n
-            -create account/ log in\n
-            -google maps\n\n
+            Feautures available:\n
+            - Speech-to-Text\n
+            - Voice recognition\n\n
 
 
             Support Information:\n
@@ -135,8 +129,10 @@
             Email: jewellao09@gmail.com\n\n
             All Rights Reserved</string>
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
-    <string name="splashscreen_info">Version 1.0\nCopyright 2015 Freshie\nAll Rights Reserved.</string>
+    <string name="splashscreen_info">Version 2.0\nCopyright 2015 Freshie\nAll Rights Reserved.</string>
     <string name="title_activity_frozen_food">FrozenFoodActivity</string>
+    <string name="title_activity_fresh_vegetable">FreshVegetableActivity</string>
+    <string name="title_activity_fresh_poultry">FreshPoultryActivity</string>
 
 
 </resources>
