@@ -1,11 +1,15 @@
 # Freshie-SeanWyndellQue&SeanHerbieChua
 
-## This project is a simulated online grocery application which includes features that help visually impaired people to navigate the app.
-## Main Features:
+### Google Play Store:
+https://play.google.com/store/apps/details?id=wynsean.freshie
+
+### This project is a simulated online grocery application which includes features that help visually impaired people to navigate the app.
+
+### Main Features:
   1. Text-to-Speech
   2. Voice Recognition
 
-## Voice Recognition Keywords:
+### Voice Recognition Keywords:
   1. "Main Menu"
   2. "Fresh Food"
   3. "Food Cupboard"
